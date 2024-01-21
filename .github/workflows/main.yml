@@ -5,10 +5,14 @@ on:
     branches: [main]
     paths-ignore:
       - "*.md"
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
-    name: Build and deploy app
+    name: Build app
 
     runs-on: ubuntu-latest
 
